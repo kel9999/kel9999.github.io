@@ -1,0 +1,361 @@
+body {
+    font-family: "Poppins";
+}
+
+/* NAVIGASI */
+.btn-secondary {
+    background: none;
+    border: 0;
+    border-width: 1px;
+    border-color: #050866;
+    border: 1px solid;
+    /* padding: 9px 40px 9px 40px; */
+    color: #050866;
+
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.btn-secondary:hover {
+    background: #050866;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: #050866;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(61, 104, 221);
+}
+
+/* SECTION 1 */
+.hero-frz h1 {
+    font-weight: 700;
+    color: #050866;
+}
+
+.hero-frz p {
+    color: #050866;
+}
+
+.nav .btn-primary {
+    background: #070eda;
+    border: 0;
+    padding: 15px 50px 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #191ea1;
+    border: 0;
+}
+
+
+/* CAROUSEL */
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 700px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none;
+}
+
+
+.slide-container {
+    display: block;
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 200px;
+    line-height: 390px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover+.carousel-controls label {
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked+.slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+    display: block;
+}
+
+input#img-1:checked~.carousel-dots label#img-dot-1,
+input#img-2:checked~.carousel-dots label#img-dot-2,
+input#img-3:checked~.carousel-dots label#img-dot-3,
+input#img-4:checked~.carousel-dots label#img-dot-4,
+input#img-5:checked~.carousel-dots label#img-dot-5,
+input#img-6:checked~.carousel-dots label#img-dot-6 {
+    opacity: 1;
+}
+
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+
+
+/* SECTION 2 (GAME POPULAR) */
+.popu-games {
+    font-weight: 700;
+    color: #050866;
+}
+
+.popu-games h2 {
+    font-weight: 700;
+    color: #050866;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.game-card {
+    margin-right: 20px;
+}
+
+
+.game-card p {
+    font-size: 20px;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+
+}
+
+.blur img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.blur h3 {
+    font-weight: 700;
+    text-shadow: 0px 1px 4px rgb(27, 27, 27);
+    color: #fff;
+    font-size: 24px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.blur img:hover {
+    -webkit-filter: blur(13px);
+    -moz-filter: all .25s ease;
+    -o-filter: all .25s ease;
+    -ms-filter: all .25s ease;
+    filter: blur(20px);
+}
+
+.blur:hover h3 {
+    bottom: 40%;
+    opacity: 1;
+}
+
+.multi-line:hover {
+    bottom: 20%;
+    opacity: 1;
+}
+
+.blur h3 a:hover {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.blur h3 a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+/* SECTION 3 : HOW TO TOPUP*/
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h2 {
+    font-weight: 700;
+    color: #050866;
+    margin-bottom: 50px;
+}
+
+.course p {
+    color: rgb(41, 40, 40);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #e3f1ff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-col h3 {
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px) {
+    .vertikal-mobile {
+        flex-direction: column;
+    }
+
+    .carousel {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .popu-games {
+        flex-direction: row;
+        width: 700px;
+    }
+}
+
+.howto-icon {
+    float: left;
+}
+
+
+/* FOOTER */
+
+.bg-footer {
+    background-color: #5c61f0;
+}
+
+.footer p {
+    color: white;
+}
