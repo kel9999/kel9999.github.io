@@ -1,0 +1,120 @@
+nav {}
+
+.navbar-nav li a {
+    color: #050866;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.topup-section h1 {
+    color: #050866;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.pembuka p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #050866;
+}
+
+.game-name {
+    color: #050866;
+}
+
+.game-name h2 {
+    font-weight: 700;
+}
+
+.category p {
+    font-weight: 500;
+    color: #0c145ac7;
+
+}
+
+.topup-section input {
+
+    max-width: 300px;
+    border: 1px solid #0C145A;
+    padding: 0.75rem 1.625rem;
+    color: #0C145A;
+}
+
+.topup-section input::placeholder {
+    color: #9fa1a7;
+}
+
+.topup-section label {
+    font-weight: 500;
+}
+
+/* Top Up Section */
+
+.banner {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* NOMINAL TOPUP SECTION */
+.nominal-topup p {}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+/* CARD HARGA DAN ITEM */
+.detail-card {
+    transition: all 0.1s linear;
+
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: ;
+    border: 1.5px solid #050866;
+}
+
+#icon-check {
+    width: 20px;
+    height: 20px;
+}
+
+.detail-card #icon-check {
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+input[type="radio"]:checked+.detail-card #icon-check {
+    opacity: 1;
+}
+
+input[type="radio"]:checked+.detail-card {
+    border: 1.5px solid #00BAFF;
+    background-color: #050866;
+    color: white;
+    transition: all 0.5s;
+}
+
+/* PAYMENT */
+.payment-section .p1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* BTN */
+.btn {
+    padding: 10px 30px;
+    font-weight: 700;
+    background: #050866;
+    color: white;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: #050748;
+    color: white;
+}

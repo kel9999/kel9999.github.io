@@ -102,7 +102,7 @@
 }
 
 .lSSlideOuter .lSPager.lSpg>li a {
-    background-color: #222222;
+    background-color: #616161;
     border-radius: 30px;
     display: inline-block;
     overflow: hidden;
@@ -111,8 +111,8 @@
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
-    height: 7px;
-    width: 20px;
+    height: 8px;
+    width: 8px;
     border-radius: 25px;
 }
 
@@ -298,23 +298,7 @@
 
 
 
-@media (max-width: 700px) {
-
-    .lSSlideOuter .lSPager.lSpg>li a {
-        background-color: #222222;
-        border-radius: 30px;
-        display: inline-block;
-        height: 8px;
-        overflow: hidden;
-        text-indent: -999em;
-        width: 8px;
-        position: relative;
-        z-index: 99;
-        -webkit-transition: all 0.5s linear 0s;
-        transition: all 0.5s linear 0s;
-
-    }
-}
+@media (max-width: 700px) {}
 
 @-webkit-keyframes rightEnd {
     0% {
