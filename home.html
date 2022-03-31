@@ -12,7 +12,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/lightslider.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,7 +29,7 @@
     <script src="js/lightslider.js"></script>
     <script src="js/script.js"></script>
 
-    <title>TopUp</title>
+    <title>NineTopUp Store</title>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://img.icons8.com/stickers/100/000000/valorant.png" class="w-50" />
+                <img src="assets/sembilan.png" class="w-50" />
             </a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" ">
@@ -52,16 +52,21 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active align-self-center px-3">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link nav-purple" href="#">Home</a>
                     </li>
                     <li class="nav-item align-self-center px-3">
-                        <a class="nav-link" href="#">Games</a>
+                        <a class="nav-link nav-purple" href="#games">Games</a>
                     </li>
                     <li class="nav-item align-self-center px-3">
-                        <a class="nav-link" href="#">Promos</a>
+                        <a class="nav-link nav-purple" href="#howto">Guide</a>
                     </li>
                     <li class="nav-item align-self-center px-3">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link nav-purple" href="#FAQ">FAQ</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="btn  btn-signin d-flex justify-content-center ms-lg-2 rounded-pill"
+                            href="./src/sign-in.html" role="button">Sign
+                            In</a>
                     </li>
 
 
@@ -87,7 +92,7 @@
                         <br />
                         No More "Nice Try!"
                     </p>
-                    <a class="btn btn-primary btn-start rounded-pill " href="#" role="button">Get Started</a>
+                    <a class="btn btn-primary btn-start rounded-pill " href="#games" role="button">Get Started</a>
 
                 </div>
                 <div class="col-md">
@@ -96,7 +101,7 @@
                             <input type="radio" name="radio-buttons" id="img-1" checked />
                             <li class="slide-container">
                                 <div class="slide-image">
-                                    <img src="images/mole-banner.jpg">
+                                    <img src="assets/mole-banner.jpg">
                                 </div>
                                 <div class="carousel-controls">
                                     <label for="img-3" class="prev-slide">
@@ -110,7 +115,7 @@
                             <input type="radio" name="radio-buttons" id="img-2" />
                             <li class="slide-container">
                                 <div class="slide-image">
-                                    <img src="images/banner-pubg.jpg">
+                                    <img src="assets/banner-pubg.jpg">
                                 </div>
                                 <div class="carousel-controls">
                                     <label for="img-1" class="prev-slide">
@@ -124,7 +129,7 @@
                             <input type="radio" name="radio-buttons" id="img-3" />
                             <li class="slide-container">
                                 <div class="slide-image">
-                                    <img src="images/ff-banner.jpg">
+                                    <img src="assets/ff-banner.jpg">
                                 </div>
                                 <div class="carousel-controls">
                                     <label for="img-2" class="prev-slide">
@@ -149,7 +154,7 @@
     </section>
 
     <!-- SECTION GAME -->
-    <section class="p-5 popu-games games ">
+    <section class="p-5 popu-games games " id="games">
         <div class="container">
             <h2 class="text-center ">Recent Popular Games</h2>
 
@@ -161,38 +166,37 @@
 
                             <div class="card  text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
+                                    <img src="assets/valorant.jpg" width="150" />
                                 </div>
                                 <h5 class="card-title mb-3">Valorant</h5>
-                                <a href="#" class="btn btn-primary btn-topup align-self-center">Top Up</a>
+                                <a href="../src/a-valo.html" class="btn btn-primary btn-topup align-self-center">Top
+                                    Up</a>
                             </div>
 
                         </div>
                     </li>
 
-                    <!-- PUBGM -->
+                    <!-- Mobile Legends -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/color/240/000000/mobile-legends-bb.png" alt=""
-                                        width="150">
+                                    <img src="assets/mobile legends.png" alt="" width="150">
                                 </div>
                                 <h5 class="card-title mb-3">Mobile Legends</h5>
-                                <a href="Mole-TopUp.html" class="btn btn-primary btn-topup text-center">Top Up</a>
+                                <a href="../src/a-mole.html" class="btn btn-primary btn-topup text-center">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- MOBILE LEGENDS -->
+                    <!-- LoL -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/color/240/000000/mobile-legends-bb.png" alt=""
-                                        width="150">
+                                    <img src="assets/jinx.png" width="150" />
                                 </div>
-                                <h5 class="card-title mb-3">Mobile Legends</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <h5 class="card-title mb-3">Wild Rift</h5>
+                                <a href="../src/a-wildrift.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
@@ -201,11 +205,10 @@
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/fluency/240/000000/genshin-impact-logo.png" alt=""
-                                        width="150">
+                                    <img src="assets/genshin.jpg" alt="" width="150">
                                 </div>
                                 <h5 class="card-title mb-3">Genshin Impact</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <a href="../src/a-genshin.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
@@ -214,78 +217,62 @@
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/fluency/96/000000/pubg.png" alt="" width="150">
+                                    <img src="assets/pubg mobile.png" alt="" width="150">
                                 </div>
                                 <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <a href="../src/a-pubg.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- PUBGM -->
+                    <!-- CODM -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/ios-filled/250/000000/call-of-duty-mobile.png"
-                                        alt="" width="150">
+                                    <img src="assets/cod mobile.png" alt="" width="150">
                                 </div>
-                                <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <h5 class="card-title mb-3">COD MOBILE</h5>
+                                <a href="../src/a-codm.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- PUBGM -->
+                    <!-- Dragon City -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/ios-filled/250/000000/call-of-duty-mobile.png"
-                                        alt="" width="150">
+                                    <img src="assets/Dragon city.png" alt="" width="150">
                                 </div>
-                                <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <h5 class="card-title mb-3">Dragon City</h5>
+                                <a href="../src/a-dragoncity.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- PUBGM -->
+                    <!-- R O X -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/ios-filled/250/000000/call-of-duty-mobile.png"
-                                        alt="" width="150">
+                                    <img src="assets/ragnarok x.jpg" alt="" width="150">
                                 </div>
-                                <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <h5 class="card-title mb-3">Ragnarok X</h5>
+                                <a href="../src/a-ragnarok.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- PUBGM -->
+                    <!-- Free Fire Max -->
                     <li class="item-a">
                         <div class="col m-3">
                             <div class="card text-dark">
                                 <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/ios-filled/250/000000/call-of-duty-mobile.png"
-                                        alt="" width="150">
+                                    <img src="assets/ff max.png" alt="" width="150">
                                 </div>
-                                <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
+                                <h5 class="card-title mb-3">Free Fire MAX</h5>
+                                <a href="../src/a-ff.html" class="btn btn-primary btn-topup">Top Up</a>
                             </div>
                         </div>
                     </li>
-                    <!-- PUBGM -->
-                    <li class="item-a">
-                        <div class="col m-3">
-                            <div class="card text-dark">
-                                <div class="card-body text-center">
-                                    <img src="https://img.icons8.com/ios-filled/250/000000/call-of-duty-mobile.png"
-                                        alt="" width="150">
-                                </div>
-                                <h5 class="card-title mb-3">PUBG MOBILE</h5>
-                                <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                            </div>
-                        </div>
-                    </li>
+
 
 
                 </ul>
@@ -293,158 +280,10 @@
         </div>
     </section>
 
-    <!-- MORE GAMES -->
-    <section class="p-5 more-games games" id="pills-games">
-        <div class="container" data-aos="fade-up">
-            <h2 class="">Fast Top Up</h2>
-            <div class="row text-center">
-                <!-- VALORANT -->
-                <div class="col mt-3">
 
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-
-
-
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-
-
-                </div>
-
-
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-
-                </div>
-                <!-- VALORANT -->
-                <div class="col mt-3">
-
-
-                    <div class="card  text-dark">
-                        <div class="card-body text-center">
-                            <img src="https://img.icons8.com/nolan/256/valorant.png" alt="" width="150">
-                        </div>
-                        <h5 class="card-title mb-3">Valorant</h5>
-                        <a href="#" class="btn btn-primary btn-topup">Top Up</a>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </div>
-    </section>
 
     <!-- HOW TO TOPUP SECTION -->
-    <section class="p-5">
+    <section class="p-5" id="howto">
         <div class="container">
             <h2 class="text-center" data-aos="fade-down">How To Top Up</h2>
             <div class="row vertikal-mobile">
@@ -481,7 +320,7 @@
     </section>
 
     <!-- FREQUENTLY ASKED QUESTION SECTION -->
-    <section id="question" class="p-5">
+    <section id="FAQ" class="p-5">
         <div class="container">
             <h2 class="text-center" data-aos="fade-down">Frequently Asked Questions</h2>
             <div class="row align-items-center">
@@ -492,20 +331,12 @@
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#question-one">
-                                    Dimana lokasinya?
+                                    Siapa Kami?
                                 </button>
                             </h2>
                             <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#question">
-                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Quaerat
-                                    nesciunt vero sequi assumenda at quia modi ducimus magnam obcaecati quos nobis
-                                    adipisci,
-                                    excepturi, eveniet maxime nam minus! Ad, quis quo. Iste, eveniet commodi rerum earum
-                                    ullam
-                                    corporis impedit tenetur inventore ex facere voluptatum doloremque eius repellendus
-                                    ut,
-                                    nemo
-                                    maiores recusandae.</div>
+                                <div class="accordion-body">Kami adalah Siswa SMKN 26 Jakarta jurusan SIJA Kelompok 9
+                                    yang beranggotakan Elang, Faraliya, Fareezha dan Farhan.</div>
                             </div>
                         </div>
                         <!-- ITEM 2 -->
@@ -513,18 +344,11 @@
                             <h2 class="accordion-header" id="flush-headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#question-two">
-                                    Siapa anda?
+                                    Apakah ada game lain?
                                 </button>
                             </h2>
                             <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#question">
-                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Fugit
-                                    veritatis facilis eius unde nulla minus accusamus ipsa, iure, totam debitis
-                                    repellendus!
-                                    Consequuntur cumque beatae labore amet repudiandae sequi laboriosam rerum eum sunt!
-                                    Iusto quia enim necessitatibus totam hic illum debitis itaque placeat, voluptas et
-                                    nobis
-                                    sequi beatae eaque delectus! Atque!.</div>
+                                <div class="accordion-body">Untuk saat ini hanya game yang tertera saja.</div>
                             </div>
                         </div>
                         <!-- ITEM 3 -->
@@ -532,17 +356,12 @@
                             <h2 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#question-three">
-                                    Bagaimana cara pesannya?
+                                    Bagaimana cara TopUp?
                                 </button>
                             </h2>
                             <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#question">
-                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Porro
-                                    ratione a, quas, tenetur eaque voluptate earum quibusdam perspiciatis non tempora
-                                    officiis eum aliquid aperiam sed accusantium. Eaque corrupti delectus quod facilis
-                                    blanditiis expedita eligendi aliquam, eveniet quas minus odit provident rerum
-                                    excepturi
-                                    aperiam tempore deserunt voluptates amet illo, dolorem ducimus..</div>
+                                <div class="accordion-body">Panduan cara TopUp bisa dilihat pada bagian "How To Top Up".
+                                </div>
                             </div>
                         </div>
 
@@ -551,17 +370,13 @@
                             <h2 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#question-four">
-                                    mengapa anda menangis?
+                                    Mengapa banyak kekurangan?
                                 </button>
                             </h2>
                             <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#question">
-                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Porro
-                                    ratione a, quas, tenetur eaque voluptate earum quibusdam perspiciatis non tempora
-                                    officiis eum aliquid aperiam sed accusantium. Eaque corrupti delectus quod facilis
-                                    blanditiis expedita eligendi aliquam, eveniet quas minus odit provident rerum
-                                    excepturi
-                                    aperiam tempore deserunt voluptates amet illo, dolorem ducimus..</div>
+                                <div class="accordion-body">Kami masih dalam tahap belajar untuk membuat website yang
+                                    sempurna.
+                                </div>
                             </div>
                         </div>
 
@@ -570,29 +385,27 @@
                             <h2 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#question-five">
-                                    nanya apa lagi?
+                                    Apa saja metode pembayarannya?
                                 </button>
                             </h2>
                             <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#question">
-                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Porro
-                                    ratione a, quas, tenetur eaque voluptate earum quibusdam perspiciatis non tempora
-                                    officiis eum aliquid aperiam sed accusantium. Eaque corrupti delectus quod facilis
-                                    blanditiis expedita eligendi aliquam, eveniet quas minus odit provident rerum
-                                    excepturi
-                                    aperiam tempore deserunt voluptates amet illo, dolorem ducimus..</div>
+                                <div class="accordion-body">Metode pembayaran yang tersedia yaitu Transfer Bank atau
+                                    Minimarket.</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md" data-aos="flip-right">
-                    <img class="img-fluid" src="images/faq.png" alt="">
+                    <img class="img-fluid" src="assets/faq.png" alt="">
                 </div>
 
             </div>
         </div>
     </section>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

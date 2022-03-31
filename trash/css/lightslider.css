@@ -3,9 +3,6 @@
 * Copyright (c) 2015 Sachin N; Licensed MIT */
 /** /!!! core css Should not edit !!!/**/
 
-
-
-
 .lSSlideOuter {
     overflow: hidden;
     -webkit-touch-callout: none;
@@ -91,29 +88,26 @@
     margin: 10px 0 0;
     padding: 0;
     text-align: center;
-
 }
 
 .lSSlideOuter .lSPager.lSpg>li {
     cursor: pointer;
     display: inline-block;
     padding: 0 5px;
-
 }
 
 .lSSlideOuter .lSPager.lSpg>li a {
-    background-color: #616161;
+    background-color: #222222;
     border-radius: 30px;
     display: inline-block;
+    height: 8px;
     overflow: hidden;
     text-indent: -999em;
+    width: 8px;
     position: relative;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
-    height: 8px;
-    width: 8px;
-    border-radius: 25px;
 }
 
 .lSSlideOuter .lSPager.lSpg>li:hover a,
@@ -185,9 +179,9 @@
 .lSAction>a {
     width: 32px;
     display: block;
-    top: 45%;
-    height: 60px;
-    background-image: url('../assets/controls2.png');
+    top: 50%;
+    height: 32px;
+    background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -195,8 +189,6 @@
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
-
-
 }
 
 .lSAction>a:hover {
@@ -206,7 +198,6 @@
 .lSAction>.lSPrev {
     background-position: 0 0;
     left: 10px;
-
 }
 
 .lSAction>.lSNext {
@@ -295,10 +286,6 @@
 }
 
 /* Rtl */
-
-
-
-@media (max-width: 700px) {}
 
 @-webkit-keyframes rightEnd {
     0% {
@@ -465,3 +452,127 @@
     cursor: -ms-grabbing;
     cursor: grabbing;
 }
+
+
+/* ----------------- */
+
+/* SECTION 2 (GAME POPULAR) */
+.popu-games {
+    font-weight: 700;
+    color: #050866;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #050866;
+}
+
+.games h5 {
+    font-weight: 600;
+}
+
+.btn-topup {
+    background: #070eda;
+    border: 0;
+    font-weight: bold;
+}
+
+.btn-topup:hover {
+    background: #191ea1;
+    border: 0;
+}
+
+.card {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 4px 0px rgba(122, 121, 121, 0.664);
+
+}
+
+.card h5 {
+    align-self: center;
+}
+
+.card .btn {
+    border-radius: 20px;
+    width: 100px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.blur {
+    width: 100%;
+    height: 100%;
+
+}
+
+.blur img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.blur h3 {
+    font-weight: 700;
+    text-shadow: 0px 1px 4px rgb(27, 27, 27);
+    color: #fff;
+    font-size: 24px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.blur img:hover {
+    -webkit-filter: blur(13px);
+    -moz-filter: all .25s ease;
+    -o-filter: all .25s ease;
+    -ms-filter: all .25s ease;
+    filter: blur(20px);
+}
+
+.blur:hover h3 {
+    bottom: 40%;
+    opacity: 1;
+}
+
+.multi-line:hover {
+    bottom: 20%;
+    opacity: 1;
+}
+
+.blur h3 a:hover {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.blur h3 a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+s
